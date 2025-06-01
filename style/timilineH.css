@@ -1,0 +1,267 @@
+body {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(54, 11, 11);
+  }
+  
+  #logo{
+      position: fixed;
+      z-index: 100;
+      height: 5.5%;
+      top: 0%;
+      left: 1%;
+      transform: scale(0.8);
+    width: 240px;
+  }
+  
+  .timeline {
+    position: relative;
+    padding: 2rem 0;
+  }
+  
+  .timeline-line {
+    position: absolute;
+    top: 1.6rem;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #d4af37; /* gold line */
+    z-index: 0;
+  }
+  
+  .timeline-item {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+  }
+  
+  .timeline-item .circle {
+    width: 18px;
+    height: 18px;
+    background-color: #d97706; /* amber */
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px #d97706;
+  }
+  
+  .timeline-item .label {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .timeline {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .timeline-line {
+      display: none;
+    }
+  
+    .timeline-item {
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+  
+    .timeline-item .circle {
+      margin: 0 0.5rem 0 0;
+    }
+  
+    .timeline-item .label {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  
+    #batik_kiri{
+      z-index: 1;
+      left: 0%;
+      position: fixed;
+    }
+    
+    #bunga_kanan_atas{
+      right: -1%;
+      top: -1%;
+      max-width: 70%;
+      max-height: 70%;
+    }
+    
+    #batik_kanan{
+      right: 0%;
+      position: fixed;
+    }
+    
+    #bunga_kiri_atas{
+    top: -1%;
+    max-width: 70%;
+    max-height: 70%;
+    }
+    
+    #bunga_kiri_bawah{
+      left: -3%;
+    }
+  
+    #bunga_kanan_bawah{
+      right: -1%;
+      bottom: -5%;
+      max-width: 70%;
+      max-height: 70%;
+    }
+  
+   #awan{
+    width: 150%;
+    right: 0%;
+   }
+  
+   #awan2{
+    width: 100%;
+    left: 0%;
+   }
+  
+   #awan3{
+    width: 100%;
+    right: 0%;
+   }
+  
+   #wayang{
+    right: 0%;
+   }
+  
+   #tumbuh_bawah{
+    right:0;
+   }
+  
+    .bekgron{
+      position: absolute;
+      height: 100%;
+    }
+  
+    #upperContainer{
+      position: absolute;
+      width: 100%;
+      min-height: 100%;
+      background: transparent;
+      background: transparent;
+      z-index: -1;
+      overflow: hidden;
+    }
+  
+    @media (hover: none) {
+      .hover-zoom:hover {
+        transform: none;
+        box-shadow: none;
+      }
+    }
+  
+    .timeline-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .timeline-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+  
+    /* fonts from Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap');
+  
+  /* Global font styles */
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #2d2d2d;
+  }
+  
+  /* Headers */
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Why Important Section */
+  .bg-yellow-100 {
+    background-color: #fff8dc !important; /* lighter, softer yellow */
+  }
+  
+  .bg-yellow-100 h2 {
+    font-family: 'Playfair Display', serif;
+    color: #b8860b;
+    font-size: 2rem;
+  }
+  
+  .bg-yellow-100 p {
+    color: #444; /* less harsh on eyes */
+    font-size: 1.1rem;
+    line-height: 1.8;
+  } 
+  
+  .opening-section h1 {
+    font-family: 'Playfair Display', serif;
+    color:darkred; /* emas cerah */
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .opening-section h1:hover {
+    transform: scale(1.03);
+  }
+  
+  .opening-section p {
+    font-family: 'Poppins', sans-serif;
+    color: #f9f9f9;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .opening-section p:hover{
+    transform: scale(1.03);
+  }
+  
+  .timelinesection1 {
+    transition: transform 0.5s ease;
+  }
+  
+  .timelinesection1 div:hover{
+    transform: scale(1.05);
+  }
+  
+  #why-important {
+    transition: transform 0.5s ease;
+  }
+  
+  #why-important div:hover{
+    transform: scale(1.05);
+  }
+  
+  .tekscontent {
+    color: black;
+    background-color:rgba(255, 232, 100, 0.459);
+  }
+
+  .timeline div:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.10);
+    text-shadow: 3px 3px 5px white;
+  }
+  
